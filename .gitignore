@@ -41,3 +41,7 @@ out/
 
 ### Logs ###
 *.log
+
+### Node ###
+node_modules/
+package*.json

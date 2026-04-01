@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/header :: header}">
+    <title>Minjae shop</title>
+</head>
+<body>
+<div th:replace="~{fragments/bodyHeader :: bodyHeader}"></div>
+
+<div class="hero">
+    <h1>Minjae shop</h1>
+    <p>쇼핑 기능 체험기</p>
+</div>
+
+<div class="section-grid">
+    <div class="card-apple">
+        <div class="card-icon">👤</div>
+        <h2>회원</h2>
+        <a class="btn-apple btn-apple-primary" href="/members/new">회원 가입</a>
+        <a class="btn-apple btn-apple-secondary" href="/members">회원 목록</a>
+    </div>
+    <div class="card-apple">
+        <div class="card-icon">📦</div>
+        <h2>상품</h2>
+        <a class="btn-apple btn-apple-primary" href="/items/new">상품 등록</a>
+        <a class="btn-apple btn-apple-secondary" href="/items">상품 목록</a>
+    </div>
+    <div class="card-apple">
+        <div class="card-icon">🛍️</div>
+        <h2>주문</h2>
+        <a class="btn-apple btn-apple-primary" href="/order">상품 주문</a>
+        <a class="btn-apple btn-apple-secondary" href="/orders">주문 내역</a>
+    </div>
+</div>
+
+<div th:replace="~{fragments/footer :: footer}"></div>
+</body>
+</html>
